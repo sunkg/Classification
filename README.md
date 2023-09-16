@@ -1,4 +1,5 @@
 This repository contains code and part of the released data for the following manuscript:
+
 Kaicong Sun, Yuanwang Zhang, Jiameng Liu, Han Zhang, Qian Wang, and Dinggang Shen, "A Unified Single-modal Framework for Brain Disease Classification Achieving Multi-modal Performance", 2023 
 
 Prerequisites:
