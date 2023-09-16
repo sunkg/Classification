@@ -11,6 +11,7 @@ Prerequisites:
 The pretrained models corresponding to the five used datasets can be found under directory ./Models
 The partially released data can be found under directory ./Data_examples
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To test the pretrained models, you can run the following scripts in command line:
 
 ###### Test Code: ADNI (NC vs. AD) ##################
@@ -31,8 +32,7 @@ python3 eval.py --test_mode J --save_path /path_to_save --model_path Models/RJHo
 ###### Test Code: BraTS 2021(MGMT+ vs. MGMT-) ####### 
 python3 eval.py --test_mode J --save_path /path_to_save --model_path Models/BraTS2021 --test_path Data_examples/BraTS2021/test/Fold1 --table_csv Data_examples/BraTS2021/Table.csv --fold 1 --protocals 0 1 --dataset BraTS --modalities Flair T2 T1CE T1
 
-
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To retrain the model, you can run the following scripts in command line:
  
 ###### Training Stage I for ADNI: NC vs. AD (3D CNN Backbone) #########
