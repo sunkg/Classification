@@ -13,44 +13,32 @@ The partially released data can be found under directory ./Data_examples
 
 To test the pretrained models, you can run the following scripts in command line:
 
-###################### Test Code: ADNI (NC vs. AD) ######################
-
+###### Test Code: ADNI (NC vs. AD) ##################
 python3 eval.py --test_mode J --save_path /path_to_save --model_path Models/ADNI/NCAD --test_path Data_examples/ADNI/test_NCAD/Fold1 --table_csv Data_examples/ADNI/Table.csv --fold 1 --protocals CN AD 
 
-###################### Test Code: ADNI (sMCI vs. pMCI) ##################
-
+###### Test Code: ADNI (sMCI vs. pMCI) ##############
 python3 eval.py --test_mode J --save_path /path_to_save --model_path Models/ADNI/sMCIpMCI --test_path Data_examples/ADNI/test_sMCIpMCI/Fold1 --table_csv Data_examples/ADNI/Table.csv --fold 1 --protocals sMCI pMCI 
 
-
-###################### Test Code: OASIS (NC vs. AD) #####################
-
+###### Test Code: OASIS (NC vs. AD) #################
 python3 eval.py --test_mode J --save_path /path_to_save --model_path Models/OASIS --test_path Data_examples/OASIS/test/Fold1 --table_csv Data_examples/OASIS/Table.csv --fold 1 --protocals CN AD --dataset OASIS --modalities AV45 MRI
 
-
-###################### Test Code: HS Hospital (NC vs. AD) ###############
-
+###### Test Code: HS Hospital (NC vs. AD) ###########
 python3 eval.py --test_mode J --save_path /path_to_save --model_path Models/HSHospital --test_path Data_examples/HSHospital/test/Fold1 --table_csv Data_examples/HSHospital/Table.csv --fold 1 --protocals CN AD --dataset HS --modalities FDG AV45 MRI
 
-
-###################### Test Code: RJ Hospital (NCI vs. svMCI) ###########
-
+###### Test Code: RJ Hospital (NCI vs. svMCI) ####### 
 python3 eval.py --test_mode J --save_path /path_to_save --model_path Models/RJHospital --test_path Data_examples/RJHospital/test/Fold1 --table_csv Data_examples/RJHospital/Table.csv --fold 1 --protocals NCI a-MCI --dataset RJ --modalities Flair MRI
 
-
-###################### Test Code: BraTS 2021(MGMT+ vs. MGMT-) ###########
-
+###### Test Code: BraTS 2021(MGMT+ vs. MGMT-) ####### 
 python3 eval.py --test_mode J --save_path /path_to_save --model_path Models/BraTS2021 --test_path Data_examples/BraTS2021/test/Fold1 --table_csv Data_examples/BraTS2021/Table.csv --fold 1 --protocals 0 1 --dataset BraTS --modalities Flair T2 T1CE T1
-
 
 
 
 To retrain the model, you can run the following scripts in command line:
  
-###################### Training Code: ADNI ##############################
-######## Training Stage I for ADNI: NC vs. AD (3D CNN Backbone) ######### 
+###### Training Stage I for ADNI: NC vs. AD (3D CNN Backbone) #########
 python3 train.py --train C --logdir  /path_to_save  --data_path /path_to_data  --table_csv /path_to_csv --batch_size 10  --protocals CN AD  --datablocksize 10 --lr 1e-4  
 
-######## Training Stage II for ADNI: NC vs. AD (3D CNN Backbone) ######## 
+###### Training Stage II for ADNI: NC vs. AD (3D CNN Backbone) ######## 
 python3 train.py --train J --logdir /path_to_save --Load_CNetwork /path_to_saved_model_from_Stage1 --data_path /path_to_data  --table_csv /path_to_csv --batch_size 12 --protocals CN AD --datablocksize 12 --lr 1e-3 
 
 ------------------------------------------------------------------------
