@@ -9,6 +9,10 @@ Prerequisites:
 4. Nibabel (3.2 or greater)
 5. h5py (3.1 or greater)
 
+Download the data examples and pretrained models from the following link:
+https://pan.baidu.com/disk/main?_at_=1694942859828#/index?category=all&path=%2FNC_Data
+
+Unzip these two downloaded folders within the root directory of these github files.
 The pretrained models corresponding to the five used datasets can be found under directory ./Models
 The partially released data can be found under directory ./Data_examples
 
