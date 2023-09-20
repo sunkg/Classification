@@ -14,7 +14,7 @@ https://pan.baidu.com/disk/main?_at_=1694942859828#/index?category=all&path=%2FN
 
 Unzip these two downloaded folders within the root directory of these github files.
 The pretrained models corresponding to the five used datasets can be found under directory ./Models
-The partially released data can be found under directory ./Data_examples
+, and the partially released data can be found under directory ./Data_examples
 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 To test the pretrained models, you can run the following scripts in command line:
