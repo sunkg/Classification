@@ -1,6 +1,6 @@
 This repository contains code and part of the released data for the following manuscript:
 
-Kaicong Sun, Yuanwang Zhang, Jiameng Liu, Han Zhang, Qian Wang, and Dinggang Shen, "A Unified Single-modal Framework for Brain Disease Classification Achieving Multi-modal Performance", 2023 
+Kaicong Sun, Yuanwang Zhang, Jiameng Liu, Ling Yu, Yan Zhou, Fang Xie, Qihao Guo, Han Zhang, Qian Wang, and Dinggang Shen, "Achieving Multi-modal Brain Disease Diagnosis Performance Using Only Single-Modality Images Through Generative AI", 2023 
 
 Prerequisites:
 1. PyTorch (1.10 or greater)
