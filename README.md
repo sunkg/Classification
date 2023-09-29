@@ -10,9 +10,9 @@ Prerequisites:
 5. h5py (3.1 or greater)
 
 Download the data examples and pretrained models from the following link:
-https://pan.baidu.com/disk/main?_at_=1694942859828#/index?category=all&path=%2FNC_Data
+https://pan.baidu.com/disk/main?_at_=1694942859828#/index?category=all&path=%2FSupplementaryFiles
 
-Unzip these two downloaded folders within the root directory of these github files.
+Unzip these two downloaded folders under the root directory of these github files.
 The pretrained models corresponding to the five used datasets can be found under directory ./Models
 , and the partially released data can be found under directory ./Data_examples
 
